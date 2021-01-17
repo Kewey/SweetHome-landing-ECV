@@ -19,7 +19,13 @@ h4,
 h5,
 h6 {
   font-family: "Fredoka One";
+  font-weight: normal;
 }
+
+h1 {
+  font-size: calc(2rem + 1.5vw);
+}
+
 h2 {
   font-size: 35px;
   margin-bottom: 15px;

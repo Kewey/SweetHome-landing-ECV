@@ -11,7 +11,12 @@
 */
 .btn {
   font-family: "Fredoka One";
+  font-weight: normal;
   font-size: 17;
+
+  @media (max-width: 900px) {
+    display: flex;
+  }
 
   &.btn-primary,
   &.btn-outline {
@@ -35,6 +40,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 30px;
 
   .logo,
   nav {
@@ -46,18 +52,19 @@ header {
       display: inline-flex;
       align-items: center;
 
+      img {
+        margin-right: 10px;
+      }
+
       strong {
         font-family: "Fredoka One";
-        font-size: 26px;
+        font-weight: normal;
+        font-size: calc(1rem + 1.5vh);
       }
 
       p {
         font-size: 10px;
       }
-    }
-
-    img {
-      margin-right: 10px;
     }
   }
 
@@ -65,12 +72,20 @@ header {
     display: flex;
     justify-content: center;
     column-gap: 30px;
+
+    @media (max-width: 600px) {
+      display: none;
+    }
   }
 
   .menu-cta {
     display: flex;
     justify-content: flex-end;
     column-gap: 30px;
+
+    @media (max-width: 600px) {
+      display: none;
+    }
   }
 }
 
@@ -81,13 +96,21 @@ header {
   height: 85vh;
   border-bottom-left-radius: 150px;
 
-  & h1 {
-    font-size: 45px;
+  h1 {
     margin-bottom: 20px;
 
-    & span {
+    span {
       font-family: inherit;
       color: var(--lightblue);
+    }
+  }
+
+  .btn:first-of-type {
+    margin-right: 20px;
+
+    @media (max-width: 900px) {
+      margin-right: 0;
+      margin-bottom: 20px;
     }
   }
 }
