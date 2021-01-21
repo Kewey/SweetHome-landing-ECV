@@ -117,8 +117,25 @@ header {
   padding-top: min(150px, 20%);
   border-radius: 0 0 50px 50px;
   max-width: 1300px;
-  background: url("/assets/pattern.svg") var(--lighter);
-  background-size: 30%;
+  // background: url("/assets/pattern.svg") var(--lighter);
+  // background-size: 30%;
+
+  .bg-perspective {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 50px;
+    perspective: 200px;
+    // transform: rotate3d(1, 1, 0, 0.1turn);
+
+    &.light {
+      background: url("/assets/pattern.svg") var(--lighter);
+      background-size: 30%;
+    }
+  }
 
   @media (max-width: 1420px) {
     padding: 30px;
@@ -130,16 +147,16 @@ header {
     padding: 40px 0;
   }
 
-  &:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background: url("/assets/mask-container-right.svg") no-repeat;
-    background-size: contain;
-  }
+  // &:after {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   bottom: 0;
+  //   right: 0;
+  //   left: 0;
+  //   background: url("/assets/mask-container-right.svg") no-repeat;
+  //   background-size: contain;
+  // }
 
   ul li {
     margin-bottom: 30px;
@@ -178,19 +195,24 @@ header {
     }
   }
 
+  .pers-card {
+    transform-style: preserve-3d;
+    transform: rotateY(10deg) rotateX(20deg);
+  }
+
   .card {
     padding: 20px;
     background: #ffffff;
     border-radius: 10px;
     display: inline-flex;
     flex-direction: column;
-    transform-style: preserve-3d;
-    transform: rotateY(-60deg) rotateX(3deg);
-    perspective: 200px;
+    // transform-style: preserve-3d;
+    // transform: rotateY(-60deg) rotateX(3deg);
+    // perspective: 200px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 
     &:nth-child(2) {
-      transform: translateZ(80px) rotateY(-60deg) rotateX(3deg);
+      transform: translateZ(80px);
     }
 
     p {
