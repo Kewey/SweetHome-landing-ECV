@@ -16,7 +16,8 @@ addEventListener("mousemove", (e) => {
     12
   )}deg) rotateY(${Math.min(30 * pourcentX, 12)}deg)`;
 
-  cards.style.transform = `rotateX(${-pourcentY * 30 + 30}deg) rotateY(${
-    pourcentX * 30
-  }deg)`;
+  cards.style.transform = `rotateX(${30 * pourcentY}deg) rotateY(${Math.min(
+    30 * pourcentX,
+    12
+  )}deg)`;
 });

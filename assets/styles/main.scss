@@ -120,6 +120,19 @@ header {
   // background: url("/assets/pattern.svg") var(--lighter);
   // background-size: 30%;
 
+  // > svg {
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   height: 100%;
+  //   width: 100%;
+  //   z-index: -1;
+  // }
+
+  [id="m"] {
+    fill: var(--blue);
+  }
+
   .bg-perspective {
     position: absolute;
     top: 0;
@@ -206,12 +219,24 @@ header {
     border-radius: 10px;
     display: inline-flex;
     flex-direction: column;
-    // transform-style: preserve-3d;
-    // transform: rotateY(-60deg) rotateX(3deg);
-    // perspective: 200px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 
+    &.blue {
+      background-color: var(--lightblue);
+      color: var(--white);
+      transform: translateZ(-20px);
+    }
+
     &:nth-child(2) {
+      position: absolute;
+      top: 80px;
+      left: 60px;
+      right: 60px;
+      transform: translateZ(-20px);
+    }
+
+    &:nth-child(3) {
+      margin-top: 130px;
       transform: translateZ(80px);
     }
 
