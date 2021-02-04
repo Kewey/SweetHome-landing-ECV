@@ -4,21 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="module" src="./main.js" defer=""></script>
-    <title>Gérer les dépenses quotidiennes de votre maison | SweetHome</title>
+    <title>Gérer les dépenses quotidiennes de votre maison | Swoome</title>
   </head>
   <body>
     <section class="hero">
-      <header class="container grid grid-col-3 md-grid-col-1">
+      <header class="container row space-between-x">
         <div class="logo">
-          <a href="#">
-            <img
-              src="./assets/SweetHome-logo.svg"
+          <a href="#" id="logo">
+            <svg viewBox="0 0 57 53" height="53" width="59" id="shapeLogo">
+              <path
+                id="Swoome"
+                d="M70.527,687.169C58.9,702.806,33.422,684.06,41.535,666.21A15.933,15.933,0,0,1,57.328,657c12.826,1.1,16.136,17.343,9.189,17.343-6.115,0-4.682-11.02,4.043-15.889,10.051-5.609,22.379,2.128,22.087,13.634-.726,28.638-31.846,44.708-51.39,21.5"
+                transform="translate(-37.438 -653.918)"
+                fill="none"
+                stroke="#fff"
+                stroke-linecap="round"
+                stroke-miterlimit="10"
+                stroke-width="5"
+              />
+            </svg>
+            <!-- <img
+              src="./assets/Swoome-logo.svg"
               alt=""
               height="48"
               width="52"
-            />
+            /> -->
             <div>
-              <strong>SweetHome</strong>
+              <strong>Swoome</strong>
               <p style="margin-bottom: 0">Gérer les dépenses domestiques</p>
             </div>
           </a>
@@ -44,19 +56,23 @@
               Que ce soit entre amis, en couple ou en colocation, gères les
               dépenses quotidiennes de ton foyer.
             </p>
-            <a href="#" class="btn btn-primary">Télécharger l’application</a>
+            <a href="#" class="btn btn-primary"
+              ><span>Télécharger l’application</span></a
+            >
             <a href="#" class="btn btn-outline"
-              >Découvrir les fonctionnalités</a
+              ><span>Découvrir les fonctionnalités</span></a
             >
           </div>
           <div class="col">
-            <img src="./assets/sweethome-mobile-mockup.png" alt="" />
+            <img src="./assets/img/Swoome-mobile-mockup.png" alt="" />
           </div>
         </div>
       </div>
     </section>
 
     <section class="concept">
+      <div class="spark el1"></div>
+
       <!-- <svg>
         <mask id="m" fill="#fff">
           <path
@@ -83,7 +99,7 @@
         <div class="grid grid-col-2 md-grid-col-1">
           <div class="col">
             <h4>Quel est le concept ?</h4>
-            <h2>Qu’est-ce que SweetHome ?</h2>
+            <h2 class="obs">Qu’est-ce que Swoome ?</h2>
             <p>
               Une application simple et utile qui te permet de gérer les
               dépenses communes de ta colocation et de les répartir
@@ -135,61 +151,32 @@
               </li>
             </ul>
           </div>
-          <div class="col">
+          <div class="col row center-y center-x">
             <div class="pers-card">
-              <div class="card">
-                <h3>Vous devez 4,90€ à Jordan</h3>
-                <p>Paiement effectué</p>
-              </div>
-              <div class="card blue">
-                <p>Dépenses communes</p>
-                <span class="bigNumber">1024,90€</span>
-                <div>
-                  <img src="" alt="" />
-                  <span class="btn">Ajouter une transaction</span>
-                </div>
-              </div>
-              <div class="card">
-                <div class="row space-between">
-                  <h3>Courses Magasin</h3>
-                  <h3>-34,90€</h3>
-                </div>
-                <p>Drive pour la semaine</p>
-                <div class="row center-y my-3">
-                  <img
-                    src="https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/user/12.jpg"
-                    alt=""
-                    class="avatar"
-                  />
-                  <img
-                    src="https://likewisestage.blob.core.windows.net/images/adbe7230-5587-43e5-96fe-3ce863f25e88/photo.jpg"
-                    alt=""
-                    class="avatar"
-                  />
-                  <img
-                    src="https://randomuser.me/api/portraits/men/42.jpg"
-                    alt=""
-                    class="avatar"
-                  />
-                  <img
-                    src="https://randomuser.me/api/portraits/men/33.jpg"
-                    alt=""
-                    class="avatar"
-                  />
-                  <p class="muted">Margot, Jordan, Paul, Patrick</p>
-                </div>
-                <div class="row center-y space-between">
-                  <div class="row center-y">
-                    <img
-                      src="https://randomuser.me/api/portraits/lego/6.jpg"
-                      alt=""
-                      class="avatar"
-                    />
-                    <p class="muted">Dépense par vous</p>
-                  </div>
-                  <p class="muted">29/10/2020</p>
-                </div>
-              </div>
+              <img
+                src="assets/img/Card-paiement@2x.jpg"
+                width="300"
+                alt=""
+                class="card"
+              />
+              <img
+                src="assets/img/Card-depense-global@2x.jpg"
+                width="300"
+                alt=""
+                class="card"
+              />
+              <img
+                src="assets/img/Card-depense@2x.jpg"
+                width="300"
+                alt=""
+                class="card"
+              />
+              <img
+                src="assets/img/card-btn-transaction@2x.jpg"
+                alt=""
+                width="300"
+                class="card"
+              />
             </div>
           </div>
         </div>
@@ -201,14 +188,32 @@
         <div class="row">
           <div class="col">
             <h4>Pour qui ?</h4>
-            <h2>A qui s’adresse SweetHome ?</h2>
+            <h2>A qui s’adresse Swoome ?</h2>
             <p>
               Une solution digitale qui s’adapte à n’importe quelle situation et
               à tous les types de groupes de colocation.
             </p>
-
-            <a href="#" class="btn btn-primary">Télécharger l'application</a>
           </div>
+          <div class="col"></div>
+        </div>
+        <div class="grid grid-col-3 md-grid-col-1 gap-30">
+          <div class="card blue">
+            <img src="assets/img/for-coloc.svg" alt="Pour les coloc" />
+            <h3>Pour les colocataires 👬🏻</h3>
+          </div>
+          <div class="card blue">
+            <img src="assets/img/for-couple.svg" alt="" />
+            <h3>Pour les couples 👩‍❤️‍👨</h3>
+          </div>
+          <div class="card blue">
+            <img src="assets/img/for-friend.svg" alt="" />
+            <h3>Pour les amis 👩🏼‍🤝‍👨🏻</h3>
+          </div>
+        </div>
+        <div class="row center-x">
+          <a href="#" class="btn btn-primary">
+            <span>Télécharger l'application </span>
+          </a>
         </div>
       </div>
     </section>
@@ -218,16 +223,18 @@
         <div class="row">
           <div class="col">
             <h4>Comment ça marche ?</h4>
-            <h2>Que permet SweetHome ?</h2>
+            <h2>Que permet Swoome ?</h2>
             <p>
               L’application propose trois grandes fonctionnalités pour vous
               accompagner dans vos dépenses du quotidien.
             </p>
           </div>
         </div>
-        <div class="grid grid-col-3 md-grid-col-1">
+        <div class="grid grid-col-3 md-grid-col-1 gap-30">
           <div class="row column center-y">
-            <img src="./assets/img/add-transactions.png" alt="" />
+            <div class="img-container">
+              <img src="./assets/img/add-transactions@2x.png" alt="" />
+            </div>
             <span class="circle">#1</span>
             <h3>Ajouter des transactions</h3>
             <p>
@@ -237,7 +244,9 @@
             </p>
           </div>
           <div class="row column center-y">
-            <img src="./assets/img/floor-depenses.png" alt="" />
+            <div class="img-container">
+              <img src="./assets/img/floor-depenses@2x.png" alt="" />
+            </div>
             <span class="circle">#2</span>
             <h3>Equilibrer les dépenses</h3>
             <p>
@@ -246,7 +255,9 @@
             </p>
           </div>
           <div class="row column center-y">
-            <img src="./assets/img/share-idea.png" alt="" />
+            <div class="img-container">
+              <img src="./assets/img/share-idea@2x.png" alt="" />
+            </div>
             <span class="circle">#3</span>
             <h3>Partager des idées</h3>
             <p>
@@ -265,7 +276,7 @@
             <h4>Qui sommes-nous ?</h4>
             <h2>Une équipe de choc 💪</h2>
             <p>
-              SweetHome est né de l’idée d’un couple, celui de Jordan et Margot,
+              Swoome est né de l’idée d’un couple, celui de Jordan et Margot,
               pour permettre à chaque foyer de gérer ses dépenses sereinement.
               Lui est développeur web, elle UX designeuse et ils ont allié leurs
               compétences pour créer une application qui leur ressemble.

@@ -8,7 +8,6 @@
 }
 .row {
   display: flex;
-  flex-wrap: wrap;
 
   // @media (max-width: 900px) {
   //   flex-direction: column;
@@ -18,8 +17,12 @@
     flex-direction: column;
   }
 
-  .space-between {
+  &.space-between-x {
     justify-content: space-between;
+  }
+
+  &.space-between-y {
+    align-items: space-between;
   }
 
   .col {
@@ -33,6 +36,10 @@
 
 .grid {
   display: grid;
+
+  &.gap-30 {
+    gap: 30px;
+  }
 
   &.grid-col {
     &-2 {
