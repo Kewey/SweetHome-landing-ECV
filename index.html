@@ -1,293 +1,433 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script type="module" src="./main.js" defer=""></script>
-    <title>Gérer les dépenses quotidiennes de votre maison | Swoome</title>
-  </head>
-  <body>
-    <section class="hero">
-      <header class="container row space-between-x">
-        <div class="logo">
-          <a href="#" id="logo">
-            <svg viewBox="0 0 57 53" height="53" width="59" id="shapeLogo">
-              <path
-                id="Swoome"
-                d="M70.527,687.169C58.9,702.806,33.422,684.06,41.535,666.21A15.933,15.933,0,0,1,57.328,657c12.826,1.1,16.136,17.343,9.189,17.343-6.115,0-4.682-11.02,4.043-15.889,10.051-5.609,22.379,2.128,22.087,13.634-.726,28.638-31.846,44.708-51.39,21.5"
-                transform="translate(-37.438 -653.918)"
-                fill="none"
-                stroke="#fff"
-                stroke-linecap="round"
-                stroke-miterlimit="10"
-                stroke-width="5"
-              />
-            </svg>
-            <!-- <img
-              src="./assets/Swoome-logo.svg"
-              alt=""
-              height="48"
-              width="52"
-            /> -->
-            <div>
-              <strong>Swoome</strong>
-              <p style="margin-bottom: 0">Gérer les dépenses domestiques</p>
-            </div>
-          </a>
-        </div>
-        <nav class="main-menu">
-          <a href="#" class="btn">Le concept</a>
-          <a href="#" class="btn">Pour qui ?</a>
-          <a href="#" class="btn">Comment ça marche ?</a>
-        </nav>
-        <nav class="menu-cta row center-y">
-          <a href="#" class="btn">Se connecter</a>
-          <a href="#" class="btn btn-outline">S'inscrire</a>
-        </nav>
-      </header>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script type="module" src="./main.js" defer=""></script>
+		<title>Gérer les dépenses quotidiennes de votre maison | Swoome</title>
+	</head>
+	<body>
+		<section class="hero">
+			<svg
+				class="bg-circles"
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 1920 800"
+			>
+				<rect x="0" y="0" width="1920" height="800" fill="#150968" />
+				<circle cx="1280" cy="300" r="600" fill="#4361ED" />
+				<circle cx="440" cy="300" r="600" fill="#150968" opacity=".7" />
+				<circle cx="1920" cy="200" r="250" fill="#4cc8ef" />
+			</svg>
+			<svg
+				class="cross"
+				xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink"
+				width="66.67"
+				height="66.669"
+				viewBox="0 0 66.67 66.669"
+			>
+				<g>
+					<path
+						d="M8.053,55.589A8.053,8.053,0,0,1,2.359,41.84L41.841,2.358a8.054,8.054,0,0,1,11.39,11.39L13.748,53.231a8.029,8.029,0,0,1-5.694,2.358"
+						fill="#fff"
+					/>
+					<path
+						d="M47.536,55.589a8.031,8.031,0,0,1-5.7-2.358L2.358,13.748A8.054,8.054,0,0,1,13.749,2.358L53.23,41.84a8.053,8.053,0,0,1-5.693,13.749"
+						fill="#fff"
+					/>
+				</g>
+			</svg>
+			<svg
+				class="white-path"
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="-750 1350 342 277"
+				height="342"
+				width="277"
+			>
+				<path></path>
+			</svg>
+			<header class="container row space-between-x">
+				<div class="logo">
+					<a href="#" id="logo">
+						<svg viewBox="0 0 57 53" height="53" width="59" id="shapeLogo">
+							<path
+								id="Swoome"
+								d="M70.527,687.169C58.9,702.806,33.422,684.06,41.535,666.21A15.933,15.933,0,0,1,57.328,657c12.826,1.1,16.136,17.343,9.189,17.343-6.115,0-4.682-11.02,4.043-15.889,10.051-5.609,22.379,2.128,22.087,13.634-.726,28.638-31.846,44.708-51.39,21.5"
+								transform="translate(-37.438 -653.918)"
+								fill="none"
+								stroke="#fff"
+								stroke-linecap="round"
+								stroke-miterlimit="10"
+								stroke-width="5"
+							/>
+						</svg>
+						<div>
+							<strong>Swoome</strong>
+							<p style="margin-bottom: 0">Gérer les dépenses domestiques</p>
+						</div>
+					</a>
+				</div>
+				<nav class="main-menu">
+					<a href="#concept" class="btn">Le concept</a>
+					<a href="#who" class="btn">Pour qui ?</a>
+					<a href="#howitwork" class="btn">Comment ça marche ?</a>
+				</nav>
+				<nav class="menu-cta row center-y">
+					<a href="#" class="btn">Se connecter</a>
+					<a href="#" class="btn btn-outline">Commencer</a>
+				</nav>
+			</header>
 
-      <div class="container">
-        <div class="grid grid-col-2 md-grid-col-1 center-y">
-          <div class="col">
-            <h1>
-              Gérer les <span>dépenses quotidiennes</span> de votre maison 💸
-            </h1>
-            <p>
-              Que ce soit entre amis, en couple ou en colocation, gères les
-              dépenses quotidiennes de ton foyer.
-            </p>
-            <a href="#" class="btn btn-primary"
-              ><span>Télécharger l’application</span></a
-            >
-            <a href="#" class="btn btn-outline"
-              ><span>Découvrir les fonctionnalités</span></a
-            >
-          </div>
-          <div class="col">
-            <img src="./assets/img/Swoome-mobile-mockup.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
+			<div class="container">
+				<div class="grid grid-col-2 md-grid-col-1 center-y">
+					<div class="col">
+						<h1>
+							Gérer les <span>dépenses quotidiennes</span> de votre maison 💸
+						</h1>
+						<p>
+							Que ce soit entre amis, en couple ou en colocation, gères les
+							dépenses quotidiennes de ton foyer.
+						</p>
+						<a href="#" class="btn btn-primary"
+							><span>Télécharger l’application</span></a
+						>
+						<a href="#" class="btn btn-outline"
+							><span>Découvrir les fonctionnalités</span></a
+						>
+					</div>
+					<div class="col">
+						<img
+							src="./assets/img/Swoome-mobile-mockup.png"
+							alt=""
+							class="obs"
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <section class="concept">
-      <div class="spark el1"></div>
+		<section class="obs concept" id="concept">
+			<div class="spark el1"></div>
+			<div class="container">
+				<div class="bg-perspective light"></div>
+				<div class="grid grid-col-2 md-grid-col-1">
+					<div class="col">
+						<h4>Quel est le concept ?</h4>
+						<h2>Qu’est-ce que Swoome ?</h2>
+						<p>
+							Une application simple et utile qui te permet de gérer les
+							dépenses communes de ta colocation et de les répartir
+							équitablement entre chaque membre.
+						</p>
 
-      <!-- <svg>
-        <mask id="m" fill="#fff">
-          <path
-            id="bg"
-            width="100%"
-            height="100%"
-            d="M75.325-127.5,1688.373-27.591c41.6,0,75.325,28.768,75.325,64.255V677.65c0,35.487-33.724,64.255-75.325,64.255H75.325C33.724,741.9,0,713.137,0,677.65v-740.9C0-98.735,33.724-127.5,75.325-127.5Z"
-            transform="translate(0 127.503)"
-            fill="#f4f4f4"
-          />
-          <g fill="#000">
-            <path d="M0,.8H52c-27.6,3-49.3,22-52,45.7Z" />
-            <path
-              d="M1400,.4V133h-.1v-2.3a40.3,40.3,0,0,0-.3-4.9c-2.9-25.9-28.4-46.1-59.5-46.1L66,.8H52c2.5-.2,5-.4,7.5-.4Z"
-            />
-            <path d="M52,.8c-27.6,3-49.3,22-52,45.7V.8Z" />
-            <path d="M1399.6.8v125c-2.9-25.9-28.4-46.1-59.5-46.1L66,.8Z" />
-          </g>
-        </mask>
-        <use xlink:href="#bg" mask="url(#m)" />
-      </svg> -->
-      <div class="container">
-        <div class="bg-perspective light"></div>
-        <div class="grid grid-col-2 md-grid-col-1">
-          <div class="col">
-            <h4>Quel est le concept ?</h4>
-            <h2 class="obs">Qu’est-ce que Swoome ?</h2>
-            <p>
-              Une application simple et utile qui te permet de gérer les
-              dépenses communes de ta colocation et de les répartir
-              équitablement entre chaque membre.
-            </p>
+						<ul>
+							<li class="obs">
+								<div class="row center-y">
+									<div class="col-auto">
+										<span>1</span>
+									</div>
+									<div class="col">
+										<h3>Adapté à chaque maison</h3>
+										<p>
+											Invite autant de membres que tu veux dans ton foyer et
+											attribue les dépenses comme tu le souhaites.
+										</p>
+									</div>
+								</div>
+							</li>
+							<li class="obs">
+								<div class="row center-y">
+									<div class="col-auto">
+										<span>2</span>
+									</div>
+									<div class="col">
+										<h3>Simple &amp; rapide</h3>
+										<p>
+											Ajoute facilement toutes tes transactions et partage de
+											nouvelles notes en seulement quelques minutes.
+										</p>
+									</div>
+								</div>
+							</li>
+							<li class="obs">
+								<div class="row center-y">
+									<div class="col-auto">
+										<span>3</span>
+									</div>
+									<div class="col">
+										<h3>Autonome &amp; transparent</h3>
+										<p>
+											Accède à tout moment à la liste des transactions de ton
+											foyer et à l’équilibre automatique des dépenses.
+										</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="col row center-y center-x">
+						<div class="pers-card">
+							<img
+								src="assets/img/Card-paiement@2x.jpg"
+								width="300"
+								alt=""
+								class="card"
+							/>
+							<img
+								src="assets/img/Card-depense-global@2x.jpg"
+								width="300"
+								alt=""
+								class="card"
+							/>
+							<img
+								src="assets/img/Card-depense@2x.jpg"
+								width="300"
+								alt=""
+								class="card"
+							/>
+							<img
+								src="assets/img/card-btn-transaction@2x.jpg"
+								alt=""
+								width="300"
+								class="card"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-            <ul>
-              <li>
-                <div class="row center-y">
-                  <div class="col-auto">
-                    <span>1</span>
-                  </div>
-                  <div class="col">
-                    <h3>Adapté à chaque maison</h3>
-                    <p>
-                      Invite autant de membres que tu veux dans ton foyer et
-                      attribue les dépenses comme tu le souhaites.
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="row center-y">
-                  <div class="col-auto">
-                    <span>2</span>
-                  </div>
-                  <div class="col">
-                    <h3>Simple &amp; rapide</h3>
-                    <p>
-                      Ajoute facilement toutes tes transactions et partage de
-                      nouvelles notes en seulement quelques minutes.
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="row center-y">
-                  <div class="col-auto">
-                    <span>3</span>
-                  </div>
-                  <div class="col">
-                    <h3>Autonome &amp; transparent</h3>
-                    <p>
-                      Accède à tout moment à la liste des transactions de ton
-                      foyer et à l’équilibre automatique des dépenses.
-                    </p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="col row center-y center-x">
-            <div class="pers-card">
-              <img
-                src="assets/img/Card-paiement@2x.jpg"
-                width="300"
-                alt=""
-                class="card"
-              />
-              <img
-                src="assets/img/Card-depense-global@2x.jpg"
-                width="300"
-                alt=""
-                class="card"
-              />
-              <img
-                src="assets/img/Card-depense@2x.jpg"
-                width="300"
-                alt=""
-                class="card"
-              />
-              <img
-                src="assets/img/card-btn-transaction@2x.jpg"
-                alt=""
-                width="300"
-                class="card"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+		<section class="for-who" id="who">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<h4>Pour qui ?</h4>
+						<h2>A qui s’adresse Swoome ?</h2>
+						<p>
+							Une solution digitale qui s’adapte à n’importe quelle situation et
+							à tous les types de groupes de colocation.
+						</p>
+					</div>
+					<div class="col"></div>
+				</div>
+				<div class="grid grid-col-3 md-grid-col-1 gap-30">
+					<div class="card blue">
+						<img src="assets/img/for-coloc.svg" alt="Pour les coloc" />
+						<h3 class="obs">Pour les colocataires 👬🏻</h3>
+					</div>
+					<div class="card blue">
+						<img src="assets/img/for-couple.svg" alt="" />
+						<h3 class="obs">Pour les couples 👩‍❤️‍👨</h3>
+					</div>
+					<div class="card blue">
+						<img src="assets/img/for-friend.svg" alt="" />
+						<h3 class="obs">Pour les amis 👩🏼‍🤝‍👨🏻</h3>
+					</div>
+				</div>
+				<div class="row center-x">
+					<a href="#" class="btn btn-primary">
+						<span>Télécharger l'application </span>
+					</a>
+				</div>
+			</div>
+		</section>
 
-    <section class="for-who">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <h4>Pour qui ?</h4>
-            <h2>A qui s’adresse Swoome ?</h2>
-            <p>
-              Une solution digitale qui s’adapte à n’importe quelle situation et
-              à tous les types de groupes de colocation.
-            </p>
-          </div>
-          <div class="col"></div>
-        </div>
-        <div class="grid grid-col-3 md-grid-col-1 gap-30">
-          <div class="card blue">
-            <img src="assets/img/for-coloc.svg" alt="Pour les coloc" />
-            <h3>Pour les colocataires 👬🏻</h3>
-          </div>
-          <div class="card blue">
-            <img src="assets/img/for-couple.svg" alt="" />
-            <h3>Pour les couples 👩‍❤️‍👨</h3>
-          </div>
-          <div class="card blue">
-            <img src="assets/img/for-friend.svg" alt="" />
-            <h3>Pour les amis 👩🏼‍🤝‍👨🏻</h3>
-          </div>
-        </div>
-        <div class="row center-x">
-          <a href="#" class="btn btn-primary">
-            <span>Télécharger l'application </span>
-          </a>
-        </div>
-      </div>
-    </section>
+		<div class="container-grey">
+			<section class="howitwork" id="howitwork">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<h4>Comment ça marche ?</h4>
+							<h2>Que permet Swoome ?</h2>
+							<p>
+								L’application propose trois grandes fonctionnalités pour vous
+								accompagner dans vos dépenses du quotidien.
+							</p>
+						</div>
+					</div>
+					<div class="grid grid-col-3 md-grid-col-1 gap-30">
+						<div class="row column center-y">
+							<div class="img-container">
+								<img
+									class="obs"
+									src="./assets/img/add-transactions@2x.png"
+									alt=""
+								/>
+							</div>
+							<span class="circle">#1</span>
+							<h3>Ajouter des transactions</h3>
+							<p>
+								Chaque membre de la maison peut ajouter et affilier ses
+								transactions mais aussi voir celles ajouter par les autres, en
+								toute transparence.
+							</p>
+						</div>
+						<div class="row column center-y">
+							<div class="img-container">
+								<img
+									class="obs"
+									src="./assets/img/floor-depenses@2x.png"
+									alt=""
+								/>
+							</div>
+							<span class="circle">#2</span>
+							<h3>Equilibrer les dépenses</h3>
+							<p>
+								Toutes les transactions sont équilibrés en temps réel, pour
+								garantir un partage des dépenses fiable entre chaque membre.
+							</p>
+						</div>
+						<div class="row column center-y">
+							<div class="img-container">
+								<img class="obs" src="./assets/img/share-idea@2x.png" alt="" />
+							</div>
+							<span class="circle">#3</span>
+							<h3>Partager des idées</h3>
+							<p>
+								Ajoutes des mémos entre les membres de ta maison pour
+								centraliser les informations que tu souhaites leur partager.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
 
-    <section class="howitwork">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <h4>Comment ça marche ?</h4>
-            <h2>Que permet Swoome ?</h2>
-            <p>
-              L’application propose trois grandes fonctionnalités pour vous
-              accompagner dans vos dépenses du quotidien.
-            </p>
-          </div>
-        </div>
-        <div class="grid grid-col-3 md-grid-col-1 gap-30">
-          <div class="row column center-y">
-            <div class="img-container">
-              <img src="./assets/img/add-transactions@2x.png" alt="" />
-            </div>
-            <span class="circle">#1</span>
-            <h3>Ajouter des transactions</h3>
-            <p>
-              Chaque membre de la maison peut ajouter et affilier ses
-              transactions mais aussi voir celles ajouter par les autres, en
-              toute transparence.
-            </p>
-          </div>
-          <div class="row column center-y">
-            <div class="img-container">
-              <img src="./assets/img/floor-depenses@2x.png" alt="" />
-            </div>
-            <span class="circle">#2</span>
-            <h3>Equilibrer les dépenses</h3>
-            <p>
-              Toutes les transactions sont équilibrés en temps réel, pour
-              garantir un partage des dépenses fiable entre chaque membre.
-            </p>
-          </div>
-          <div class="row column center-y">
-            <div class="img-container">
-              <img src="./assets/img/share-idea@2x.png" alt="" />
-            </div>
-            <span class="circle">#3</span>
-            <h3>Partager des idées</h3>
-            <p>
-              Ajoutes des mémos entre les membres de ta maison pour centraliser
-              les informations que tu souhaites leur partager.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+		<section class="team obs">
+			<div class="container">
+				<div class="grid grid-col-2 md-grid-col-1 center-y">
+					<div>
+						<h4>Qui sommes-nous ?</h4>
+						<h2>Une équipe de choc 💪</h2>
+						<p>
+							Swoome est né de l’idée d’un couple, celui de Jordan et Margot,
+							pour permettre à chaque foyer de gérer ses dépenses sereinement.
+							Lui est développeur web, elle UX designeuse et ils ont allié leurs
+							compétences pour créer une application qui leur ressemble.
+						</p>
+					</div>
+					<div class="grid grid-col-2">
+						<img src="./assets/img/Team-Jordan-Souchez.png" alt="" />
+						<img src="./assets/img/Team-Margot-Collavini.png" alt="" />
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <section class="team">
-      <div class="container">
-        <div class="grid grid-col-2 md-grid-col-1">
-          <div>
-            <h4>Qui sommes-nous ?</h4>
-            <h2>Une équipe de choc 💪</h2>
-            <p>
-              Swoome est né de l’idée d’un couple, celui de Jordan et Margot,
-              pour permettre à chaque foyer de gérer ses dépenses sereinement.
-              Lui est développeur web, elle UX designeuse et ils ont allié leurs
-              compétences pour créer une application qui leur ressemble.
-            </p>
-          </div>
-          <div class="grid grid-col-2 md-grid-col-1">
-            <img src="./assets/img/Team-Jordan-Souchez.png" alt="" />
-            <img src="./assets/img/Team-Margot-Collavini.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-  </body>
+		<section class="pc-version">
+			<div class="container">
+				<div class="grid grid-col-2">
+					<div>
+						<h4>Disponible aussi sur ordinateur ?</h4>
+						<h2>Disponible depuis votre ordinateur 💻</h2>
+						<p>
+							Une application web est également disponible, ce qui te permets de
+							l’utiliser depuis n’importe quel device.
+						</p>
+					</div>
+					<div></div>
+				</div>
+				<div class="grid grid-col-2 center-y">
+					<div class="obs">
+						<img src="assets/img/sweethome-desktop.jpg" alt="" />
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+							width="60.687"
+							height="60.687"
+							viewBox="0 0 60.687 60.687"
+						>
+							<g>
+								<path
+									d="M7.331,50.6A7.331,7.331,0,0,1,2.147,38.086L38.087,2.146A7.331,7.331,0,0,1,48.454,12.514l-35.94,35.94A7.308,7.308,0,0,1,7.331,50.6"
+									fill="#4cc8ef"
+								/>
+								<path
+									d="M43.271,50.6a7.31,7.31,0,0,1-5.184-2.146L2.146,12.514A7.331,7.331,0,0,1,12.515,2.146L48.453,38.086A7.331,7.331,0,0,1,43.271,50.6"
+									fill="#4cc8ef"
+								/>
+							</g>
+						</svg>
+					</div>
+					<div>
+						<h4>Application web</h4>
+						<h3>Qu’est-ce que l’application web ?</h3>
+						<ul>
+							<li>Accessible depuis n’importe quel appareil</li>
+							<li>Les mêmes fonctionnalités que sur l’application mobile</li>
+							<li>Pas d’application à télécharger</li>
+						</ul>
+						<a href="#" class="btn btn-primary">
+							<span>Tester l’application web</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="download obs">
+			<div class="container">
+				<div class="grid grid-col-2 center-y">
+					<div>
+						<h4>Comment y accéder ?</h4>
+						<h2>Télécharger l’application mobile 📱</h2>
+						<p>
+							L’application est disponible pour tous, sur iOS et Android, pour
+							le bonheur des petits et des grands.
+						</p>
+						<div>
+							<a href="#"><img src="assets/img/app-store.png" alt="" /></a>
+							<a href="#"><img src="assets/img/Google-Play.png" alt="" /></a>
+						</div>
+					</div>
+					<div><img src="assets/img/sweethome-add-note.png" alt="" /></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="footer">
+			<div class="container">
+				<div class="logo">
+					<a href="#" id="logo">
+						<svg viewBox="0 0 57 53" height="53" width="59" id="shapeLogo">
+							<path
+								id="Swoome"
+								d="M70.527,687.169C58.9,702.806,33.422,684.06,41.535,666.21A15.933,15.933,0,0,1,57.328,657c12.826,1.1,16.136,17.343,9.189,17.343-6.115,0-4.682-11.02,4.043-15.889,10.051-5.609,22.379,2.128,22.087,13.634-.726,28.638-31.846,44.708-51.39,21.5"
+								transform="translate(-37.438 -653.918)"
+								fill="none"
+								stroke="#fff"
+								stroke-linecap="round"
+								stroke-miterlimit="10"
+								stroke-width="5"
+							/>
+						</svg>
+						<div>
+							<strong>Swoome</strong>
+							<p style="margin-bottom: 0">Gérer les dépenses domestiques</p>
+						</div>
+					</a>
+					<div>
+						<p>Copyright © 2021 - Mentions légales</p>
+					</div>
+				</div>
+				<div>
+					<h3>Contact</h3>
+					<a href="mailto:hello@sweethome.fr">hello@sweethome.fr</a>
+					<p>Bordeaux, France</p>
+				</div>
+				<div>
+					<h3>Plan du site</h3>
+					<a href="#">Accueil</a>
+					<a href="#">Qui sommes-nous ?</a>
+					<a href="#">Application mobile</a>
+					<a href="#">Web app</a>
+					<a href="#">Contact</a>
+				</div>
+				<div>
+					<h3>Application</h3>
+					<a href="#"><img src="assets/img/app-store.png" alt="" /></a>
+					<a href="#"><img src="assets/img/Google-Play.png" alt="" /></a>
+				</div>
+			</div>
+		</section>
+	</body>
 </html>
